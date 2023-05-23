@@ -1,0 +1,82 @@
+  .ramen p {
+    font-family: Inter;
+    margin-top: 0.5rem;
+  }
+  .ramen{
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .ramen-pic {
+    width: (0.5rem, 1rem, 395px);
+    max-height: 435px;
+    display: block;
+    object-fit: cover;
+    cursor: pointer;
+    transition: all 0.15s ease;
+  }
+  .ramen-image-container {
+    position:relative;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .ramen-pic:hover {
+    filter: brightness(60%);
+  }
+  .special-promo {
+    background-color: red;
+    width: 40%;
+    position: absolute;
+    text-align: center;
+    height: 40px;
+    top: 15px;
+    left: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:white;
+    font-family: Inter;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+  }
+  .discount-tag {
+    background-color: red;
+    width: 22.5%;
+    position: absolute;
+    text-align: center;
+    height: 40px;
+    display: flex;
+    bottom: 122px;
+    right: 4px;
+    align-items: center;
+    justify-content: center;
+    color:white;
+    font-family: Inter;
+    z-index: 10;
+  }
+  .discount-tag p, .special-promo p {
+    display: inline-block;
+    height: 70%;
+    white-space: nowrap;
+  }
+  .ramen-type {
+    color: var(--redText);
+    font-style: italic;
+    font-size: 24px;
+  }
+  .ramen-name {
+    color: var(--textColor);
+    font-size: 32px;
+  }
+  .ramen-price {
+    font-size: 24px;
+    color: var(--textColor);
+    font-style: italic;
+  }

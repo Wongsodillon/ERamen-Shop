@@ -1,0 +1,125 @@
+:root {
+  --background: #101010;
+  --fontColor: #fafafa;
+  --redText: #CB182E;
+  --overlay: rgba(0,0,0,0.875);
+}
+
+body {
+    font-family: Nova Flat;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background);
+  }
+  .title-text {
+    position: absolute;
+    display: inline;
+    text-align: center;
+    left: 45%;
+    align-self: center;
+    margin: 0 auto;
+    font-size: 36px;
+    font-family: Inter;
+    color: var(--fontColor);
+    font-weight: 500;
+  }
+  .navbar {
+    background-image: url('/assets/navup3.jpg');
+    width: 100%;
+    height: 256px;
+    box-sizing: border-box;
+    background-size: cover;
+    background-position: center -250px;
+    display: flex;
+    background-attachment: fixed;
+    justify-content: flex-end;
+    align-items: baseline;
+    padding-top: 6vh;
+    position: relative;
+  }
+  .about-us {
+    display: flex;
+    max-width: 100%;
+    height: clamp(16rem, 75vh, 29rem);
+    background-color: red;
+  }
+  .section-text, .section-pic, .section-text2, 
+  .section-pic2, .section-pic3, .section-text3 {
+    padding-inline: 4%;
+    width: 50%;
+  }
+  .section-text, .section-text2, .section-text3 {
+    background-color: #141414;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .section-pic {
+    background-image: url(/assets/aboutUs1.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .section-pic2 {
+    background-image: url(/assets/aboutUs2.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .section-pic3 {
+    background-image: url(/assets/exterior2.jpeg);
+    background-size: cover;
+    background-position: center;
+  }
+  .context {
+    color: var(--redText);
+    font-size: clamp(1rem, 2.5vw, 2.6rem);
+    margin-bottom: 1rem;
+    flex-shrink: 1;
+  }
+  
+  .content {
+    color: var(--fontColor);
+    font-family: Inter;
+    font-size: clamp(0.8rem, 2vw, 1.4rem);
+    line-height: 1.7;
+    text-align: justify;
+  }
+
+@media (max-width: 768px) {
+  .navbar {
+    display: none;
+  }
+  .title-mobile {
+    font-size: clamp(0.5rem, 8vw, 1.6rem);
+  }
+  .about-us-section {
+    padding-top: 4.3rem;
+  }
+  .title-text {
+    font-size: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .navbar {
+    justify-content: center;
+  }
+
+  .about-us {
+    height: auto;
+  }
+
+  .section-text,
+  .section-pic,
+  .section-text2,
+  .section-pic2,
+  .section-pic3,
+  .section-text3 {
+    width: 100%;
+  }
+
+  .section-pic,
+  .section-pic2,
+  .section-pic3 {
+    height: 400px; /* Adjust the height as needed */
+  }
+}

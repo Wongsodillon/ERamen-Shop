@@ -1,0 +1,165 @@
+:root {
+    --background: #101010;
+    --fontColor: #fafafa;
+    --redText: #ee0000;
+    --overlay: rgba(0,0,0,0.875);
+  }
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('/assets/Branden-Skeli-on-Unsplash-bright-ramen-restaurant-lights.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+.navbar {
+  background-image: url('/assets/navup2 (2).jpg');
+  width: 100%;
+  height: 224px;
+  box-sizing: border-box;
+  background-size: cover;
+  background-position: center -250px;
+  display: flex;
+  background-attachment: fixed;
+  justify-content: flex-end;
+  align-items: baseline;
+  padding-top: 6vh;
+  position: relative;
+}
+.title-text {
+  position: absolute;
+  left: 45%;
+  align-self: center;
+  margin: 0 auto;
+  font-size: 2rem;
+  font-family: Inter;
+  color: #fafafa;
+  font-weight: 500;
+}
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-block-start: 8rem;
+}
+.form {
+  height: 600px;
+  width: 70%;
+  background-color: rgba(0, 0, 0, 0.92);
+  margin-block-end: 6rem;
+  padding-block: 2.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.get-in-touch {
+  font-family: Nova Flat;
+  font-size: clamp(1rem, 20vh, 2.5rem);
+  color: var(--fontColor);
+  text-align: center;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.first-and-last {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-inline-start: 0.2rem;
+  width: clamp(1rem, 61vw, 46.75rem);
+}
+
+.first-name,
+.last-name {
+  width: 80%;
+  height: 36px;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.email-form {
+  width: clamp(1rem, 60vw, 46.1rem);
+  height: 36px;
+}
+
+.phn-form {
+  width: clamp(1rem, 60vw, 46.2rem);
+  height: 36px;
+}
+
+.message-form {
+  width: clamp(1rem, 60vw, 46.15rem);
+  resize: none;
+}
+.form input, textarea {
+  background: none;
+  border: solid #9d9d9d 1px;
+  color: var(--fontColor);
+  font-family: Inter;
+  font-size: 1rem;
+}
+.form input[type="text"], input[type="email"] {
+  font-size: 18px;
+  font-family: Inter;
+  padding-left: 8px;
+}
+.first-name::placeholder, .last-name::placeholder, .email-form::placeholder,
+.phn-form::placeholder {
+  padding-left: 2px;
+}
+textarea {
+  padding-top: 12px;
+  padding-left: 12px;
+  font-family: Inter;
+  font-size: 18px;
+}
+@media screen and (max-width: 768px) {
+  .navbar {
+    display: none;
+  }
+  main {
+    margin-block-start: 0;
+  }
+  .form {
+    width: 100%;
+    margin-block-start: 4rem;
+  }
+  .first-and-last {
+    flex-direction: column;
+  }
+  .first-name, .last-name {
+    margin-inline-start: -0.35rem;
+  }
+  .first-name,
+  .last-name,
+  .email-form,
+  .phn-form,
+  .message-form {
+    width: 150%;
+    max-width: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .first-name,
+  .last-name,
+  .email-form,
+  .phn-form,
+  .message-form {
+    width: 90%;
+    max-width: none;
+  }
+}
