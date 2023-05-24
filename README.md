@@ -10,6 +10,7 @@ The requirements from ERamen Shop are described below:
 2.	ERamen Shop wants you to build the website attractive, appealing, fully functional, and make sure the website is responsive. The website should be accessible using a mobile phone in a perfect way. To achieve that, use 5 kinds of CSS property and JavaScript. Use meta viewport tag and media screen rule that will be applied if the screen is below 768px screen width. 
 
 3.	The website consists of five main pages. They are Home Page, Products Page, Promotion Page About Us Page, and Contact Us Page. Below are the requirements for each page:
+
 •	Home Page
 This page shows the new and best seller ERamen Shop products. This page also has a promotion banner that displays product advertisement in ERamen.
 •	Products Page
