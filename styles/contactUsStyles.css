@@ -264,14 +264,3 @@ textarea {
     justify-content: flex-end;
   }
 }
-
-@media screen and (max-width: 480px) {
-  .first-name,
-  .last-name,
-  .email-form,
-  .phn-form,
-  .message-form {
-    width: 90%;
-    max-width: none;
-  }
-}
