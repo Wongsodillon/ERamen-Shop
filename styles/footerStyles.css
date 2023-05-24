@@ -1,108 +1,129 @@
 p {
   color: #fafafa;
-  margin:0;
+  margin: 0;
 }
+
 .footer {
-    background: linear-gradient(124.64deg, #b30000 -10%, #000000 171.47%, #43010D 206%);
-    padding-top: 48px;
-    padding-left: 72px;
-    padding-right: 72px;
-    padding-bottom: 48px;
-    width: auto;
-    max-height: 452px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 0;
+  background: linear-gradient(124.64deg, #b30000 -10%, #000000 171.47%, #43010D 206%);
+  padding-top: 3rem;
+  padding-left: 4.5rem;
+  padding-right: 4.5rem;
+  padding-bottom: 3rem;
+  width: auto;
+  height: 25.25rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
 }
+
 .footer div {
   padding: 0;
 }
-  .social-list p{
-    font-family: Inter;
-    font-size: 28px;
-    text-align: left;
-    margin-left: 2.5rem;
-    cursor: pointer;
-  }
-  .socials-text {
-    font-family: Nova Flat;
-    color: #fafafa;
-    font-size: 42px;
-    margin-bottom: 2.5rem;
-  }
-  .social-media {
-    display: flex;
-    width: 11.75rem;
-    align-items: center;
-    margin-bottom: 48px;
-  }
-  .footer-social {
-    width: 28px;
-    height: 28px;
-    cursor: pointer;
-  }
-  .address-footer {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    max-width: 420px;
-  }
-  .address-footer p {
-    margin-bottom: 1rem;
-  }
-  .address-text {
-    display: inline-block;
-    font-size: 42px;
-    font-family: Nova Flat;
-  }
-  .address {
-    font-family: Inter;
-    font-size: 18px;
-  }
-  .map {
-    width: 425px;
-    height: 262.9px;
-    border-radius: 8px;
-  }
-  .openings-container {
-    display: flex;
-    flex-direction: column;
-    margin-left: -1.5rem;
-  }
-  .open-text {
-    font-size: 42px;
-    font-family: Nova Flat;
-    margin-bottom:24px;
-    text-align: center;
-  }
-  .time-text p {
-    font-family: Inter;
-    font-size: 22px;
-  }
-  .time-text {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 400px;
-    margin-bottom: 1.2rem;
-  }
-  .contact-info-text {
-    font-size: 42px;
-    font-family: Nova Flat;
-    margin-bottom:24px;
-    margin-top: 16px;
-    text-align: center;
-  }
+
+.social-list p {
+  font-family: Inter;
+  font-size: clamp(0.75rem, 4vw, 1.75rem);
+  text-align: left;
+  margin-left: 0.625rem;
+  cursor: pointer;
+}
+
+.socials-text {
+  font-family: Nova Flat;
+  color: #fafafa;
+  font-size: 2.625rem;
+  margin-bottom: 1.5625rem;
+}
+
+.social-media {
+  display: flex;
+  width: 0.734375rem;
+  align-items: center;
+  margin-bottom: 3rem;
+  gap: 0;
+}
+
+.footer-social {
+  width: 1.75rem;
+  height: 1.75rem;
+  cursor: pointer;
+  margin-right: 1.2rem;
+}
+
+.address-footer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 26.25rem;
+}
+
+.address-footer p {
+  margin-bottom: 0.625rem;
+}
+
+.address-text {
+  display: inline-block;
+  font-size: clamp(1.3125rem, 4vw, 2.625rem);
+  font-family: Nova Flat;
+}
+
+.address {
+  font-family: Inter;
+  font-size: 1.125rem;
+}
+
+.map {
+  width: 26.5625rem;
+  min-width: 19.2rem;
+  height: 16.43125rem;
+  border-radius: 0.5rem;
+}
+
+.openings-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: -0.9375rem;
+  min-width: none;
+}
+
+.open-text {
+  font-size: clamp(1.3125rem, 4vw, 2.5rem);
+  font-family: Nova Flat;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.time-text p {
+  font-family: Inter;
+  font-size: clamp(0.875rem, 4vw, 1.75rem);
+}
+
+.time-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 25rem;
+  min-width: 19.2rem;
+  margin-bottom: 0.75rem;
+}
+
+.contact-info-text {
+  font-size: 2.625rem;
+  font-family: Nova Flat;
+  margin-bottom: 1.5rem;
+  margin-top: 1rem;
+  text-align: center;
+}
   .contact-info {
     display: flex;
     align-items: center;
     margin-block-end: 1.4rem;
   }
   .contact-info > img {
-    width: 30px;
-    height: 30px;
+    width: 1.875rem;
+    height: 1.875rem;
     padding-inline-end: 2rem;
   }
   .contact-info > p {
@@ -132,10 +153,12 @@ p {
     justify-content: space-between;
   }
 
-  @media (max-width: 767px) {
+  @media (max-width: 1000px) {
     .footer {
       padding: 24px;
-      flex-direction: column-reverse;
+      flex-direction: row;
+      align-items: center;
+      height: auto;
     }
   
     .socials {
@@ -143,18 +166,36 @@ p {
     }
   
     .socials-text {
-      font-size: 32px;
+      font-size: 2rem;
+      text-align: start;
+      margin-left: 1.1rem;
     }
-  
+    .footer-social {
+      margin-right: 0.5rem;
+    }
+    .social-list {
+      justify-content: start;
+      align-items: start;
+      flex-direction: row;
+    }
     .social-media {
-      width: 100%;
-      justify-content: center;
-      margin-bottom: 24px;
+      width: 100rem;
+      justify-content: start;
+      margin-bottom: 0.8rem;
+      margin-left: 1.25rem;
     }
-  
+    .social-media > p {
+      display: inline-block;
+      margin: 0;
+    }
+    .social-list {
+      flex-direction: row;
+      display: flex;
+    }
     .address-footer {
       width: 100%;
-      margin-top: 2rem;
+      margin-top: 1rem;
+      margin-left: 1.2rem;
     }
   
     .address-text {
@@ -162,7 +203,7 @@ p {
     }
   
     .address {
-      font-size: 24px;
+      font-size: 1.125rem;
     }
   
     .map {
@@ -171,100 +212,46 @@ p {
   
     .openings-container {
       width: 100%;
-      margin-top: 2rem;
+      margin-top: 1.8rem;
+      margin-left: 1.2rem;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 10%;
     }
-  
-    .open-text {
-      font-size: 32px;
+    .open-text, .contact-info-text {
+      font-size: 2rem;
+      text-align: start;
+      margin-block-end: 1rem;
     }
-  
-    .time-text {
-      font-size: 24px;
+    .map {
+      width: 80%;
+    }
+    .time-text > p{
+      font-size: 1.2rem;
+      min-width: 0;
+      margin: 0;
+      padding: 0;
     }
   
     .foot-button {
-      font-size: 24px;
+      font-size: 1.5;
       margin-right: 1rem;
       margin-top: 0.5rem;
     }
+    .footer-social, .contact-logo {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+    .contact-info {
+      margin-block-end: 0.8rem;
+    }
+    .contact-info > img {
+      padding-inline-end: 1rem;
+    }
+    .contact-info > p {
+      font-size: 1.2rem;
+    }
   }
 
-  @media screen and (max-width: 767px) {
-    .footer {
-      flex-direction: column;
-      text-align: center;
-      padding: 24px;
-    }
-  
-    .footer div {
-      margin: 0 auto;
-      margin-bottom: 24px;
-      width: 100%;
-    }
-  
-    .social-list p {
-      margin-left: 0;
-      margin-bottom: 12px;
-      font-size: 24px;
-    }
-  
-    .socials-text {
-      font-size: 32px;
-      margin-bottom: 24px;
-    }
-  
-    .social-media {
-      width: 100%;
-    }
-  
-    .address-footer {
-      max-width: none;
-      width: 100%;
-    }
-  
-    .address-text {
-      font-size: 32px;
-    }
-  
-    .address {
-      font-size: 20px;
-    }
-  
-    .map {
-      width: 100%;
-      height: 200px;
-    }
-  
-    .openings-container {
-      margin-left: 0;
-    }
-  
-    .open-text {
-      font-size: 32px;
-      margin-bottom: 24px;
-    }
-  
-    .time-text {
-      font-size: 20px;
-      flex-direction: column;
-      justify-content: center;
-      margin-bottom: 12px;
-    }
-  
-    .time-text p {
-      margin: 0;
-    }
-  
-    .foot-button {
-      font-size: 20px;
-      margin: 0 auto;
-      margin-top: 12px;
-    }
-  
-    .nav-footer {
-      margin-left: 0;
-      flex-direction: column;
-      align-items: center;
-      margin-top: 24px;
-    }
-  }
+
+
