@@ -73,7 +73,7 @@ function formValidation(e) {
     }
     else if (email.indexOf("@") == -1)
     {
-        messages[2].textContent = "Invalid Email Format"
+        messages[2].textContent = "Email in Format: yourname@example.com"
         emailForm.style.borderColor = "#cf0d37"
         invalid = true
     }

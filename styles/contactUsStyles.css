@@ -154,6 +154,14 @@ main {
   font-family: Inter;
   padding-left: 8px;
 }
+input:focus, textarea:focus {
+  outline: none;
+}
+input:-webkit-autofill {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: var(--fontColor);
+  background-color: transparent !important;
+}
 .first-name::placeholder, .last-name::placeholder, .email-form::placeholder,
 .phn-form::placeholder {
   padding-left: 2px;
@@ -171,8 +179,27 @@ textarea {
   margin-top: -1.5rem;
 }
 .agree-to {
+  -webkit-appearance: none;
   margin: 0; 
   cursor: pointer;
+  width: 16px;
+  height: 16px;
+  transition: all 0.3s;
+}
+.agree-to:checked::before {
+  content:"\2713";
+  display: block;
+  width: 13px;
+  height: 13px;
+  font-size: 20px;
+  line-height: 10px;
+  margin-left: 1.3px;
+  margin-bottom: 5px;
+  border-radius: 0px;
+  color: var(--fontColor);
+}
+.agree-to:checked {
+  border-color: #b30000;
 }
 .newsletter-label {
   font-family: Inter;
@@ -189,16 +216,17 @@ textarea {
   background: linear-gradient(to right, #F23E3E 50%, #fafafa 50%);
   background-size: 200% 100%;
   border:none;
-  font-family: Inter;
+  font-family: Nova Flat;
   font-size: 16px;
   color: var(--fontColor);
+  font-weight: 500;
   cursor: pointer;
   transition: all 0.35s;
   margin-top: -1rem;
 }
 .submit-button:hover {
   background-position: -100% 0;
-  color:#9c2121;
+  color:#cb0000;
 }
 @media screen and (max-width: 768px) {
   .navbar {
@@ -256,10 +284,11 @@ textarea {
     margin-left: 0.5rem;
   }
   .newsletter-container {
-    align-items: flex-start;
+    align-items: center;
     justify-content: flex-start;
     width: 64%;
   }
+  
   .button-container {
     justify-content: flex-end;
   }
