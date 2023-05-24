@@ -45,7 +45,7 @@ main {
 }
 .form {
   height: 620px;
-  width: 62.5%;
+  width: 67.5%;
   background-color: rgba(0, 0, 0, 0.92);
   margin-block-end: 6rem;
   padding-block: 2.25rem;
@@ -78,12 +78,14 @@ main {
 }
 
 .first-name-container, .last-name-container {
+  min-width: 40%;
   width: 70%;
   position: relative;
 }
 
 .first-name,
 .last-name {
+  min-width: 4rem;
   width: 97%;
   height: 36px;
 }
@@ -99,7 +101,7 @@ main {
 }
 .first-name-error, .last-name-error {
   top: 30px;
-  left: 11px;
+  left: 6px;
 }
 
 .form-row {
@@ -120,7 +122,7 @@ main {
 }
 .email-error {
   top: 30px;
-  left: 11px;
+  left: 6px;
   display: block;
   width: 100%;
 }
@@ -134,7 +136,7 @@ main {
 }
 .phn-error {
   top: 30px;
-  left: 11px;
+  left: 6px;
 }
 .message-form {
   width: clamp(1rem, 60vw, 46.15rem);
@@ -181,6 +183,7 @@ textarea {
   justify-content: flex-end;
 }
 .submit-button {
+  min-width: 120px;
   width: 20%;
   height: 40px;
   background: linear-gradient(to right, #F23E3E 50%, #fafafa 50%);
@@ -201,18 +204,32 @@ textarea {
   .navbar {
     display: none;
   }
+  .title-mobile {
+    font-size: 1.2rem;
+  }
+  .ramen-mobile {
+    font-size: 1.5rem;
+  }
   main {
     margin-block-start: 0;
   }
+  .form {
+    padding-bottom: 7rem;
+    margin-bottom: 0;
+  }
   .form-container {
     align-items: center;
+    justify-content: center;
+    width: 120%;
     padding: 0;
     margin: 0;
+    
   }
   .first-and-last {
+    width: 90%;
     padding: 0;
     margin: 0;
-    align-items: flex-start;
+    align-items: center;
     flex-direction: column;
   }
   .form {
@@ -221,19 +238,30 @@ textarea {
   }
   .form-row {
     align-items: center;
-    margin-right: 5rem;
-    width: 60%;
+    justify-content: start;
+    margin-right: 0rem;
+    width: 90%;
   }
   .first-name, .last-name {
-    margin-inline-start: -0.35rem;
+    width: 100%;
   }
-  .first-name,
-  .last-name,
-  .email-form,
-  .phn-form,
+  .email-container, .phn-container {
+    width: 70%;
+  }
+  .email-form, .phn-form {
+    width: 100%;
+  }
   .message-form {
-    width: 150%;
-    max-width: none;
+    width: 69.5%;
+    margin-left: 0.5rem;
+  }
+  .newsletter-container {
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 64%;
+  }
+  .button-container {
+    justify-content: flex-end;
   }
 }
 
