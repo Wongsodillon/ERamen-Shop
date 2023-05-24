@@ -1,13 +1,14 @@
 import { recommend } from "./createListModule.js";
 import { menu } from "./ramenData.js";
 
-const navbar = document.getElementById('nav-bar');
-const navLeft = navbar.querySelector(".nav-left");
-const navRight = document.getElementById("menu");
-const footerNav = document.querySelector(".nav-footer");
-const seeMore = document.getElementById("see-more-button");
-const orderNow = document.querySelector(".order-now-button");
+const navbar = document.getElementById('nav-bar')
+const navLeft = navbar.querySelector(".nav-left")
+const navRight = document.getElementById("menu")
+const footerNav = document.querySelector(".nav-footer")
+const seeMore = document.getElementById("see-more-button")
+const orderNow = document.querySelector(".order-now-button")
 const mobileNav = document.getElementById("menu-mobile")
+const viewMoreOn = document.querySelector(".aboutus-viewmore")
 
 let checked = false;
 const burger = document.getElementById("burger-icon")
@@ -57,6 +58,11 @@ export const navigationsHandler = e => {
 navRight.addEventListener('click', navigationsHandler);
 footerNav.addEventListener('click', navigationsHandler);
 mobileNav.addEventListener('click', navigationsHandler);
+
+viewMoreOn.addEventListener("click", () => {
+    window.history.pushState({}, '', 'Eramen.html')
+    window.location.href = 'aboutUs.html'
+})
 
 const recommendations = menu.slice(0,3)
 recommend(recommendations);
