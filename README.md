@@ -9,14 +9,17 @@ The requirements from ERamen Shop are described below:
 
 2.	ERamen Shop wants you to build the website attractive, appealing, fully functional, and make sure the website is responsive. The website should be accessible using a mobile phone in a perfect way. To achieve that, use 5 kinds of CSS property and JavaScript. Use meta viewport tag and media screen rule that will be applied if the screen is below 768px screen width. 
 
-3.	The website consists of five main pages. They are Home Page, Products Page, Promotion Page About Us Page, and Contact Us Page. Below are the requirements for each page:
-•	Home Page
-This page shows the new and best seller ERamen Shop products. This page also has a promotion banner that displays product advertisement in ERamen.
+3.	The website consists of five main pages. They are Home Page, Products Page, Promotion Page About Us Page, and Contact Us Page. Below are the requirements for each page: 
+•	Home Page This page shows the new and best seller ERamen Shop products. This page also has a promotion banner that displays product advertisement in ERamen.
+
 •	Products Page
 This page shows list of ramen or any other side dishes that ERamen Shop sells. Make sure to provide name, description, and image of the product so customer can get better insight about the product and decide which product to buy.
+
 •	Promotion Page
 This page show promotion that ERamen offers and discounted products. the customer can see all the product with discounted price. ERamen does have partnerships with e-wallet company in Indonesia.
+
 •	About Us Page
 This page provides information about the ERamen company. Make sure the information provided is relevant, such as the history, vision, and mission of ERamen.
+
 •	Contact Us Page
 This page provides a contact us form, Customer asked to submit some personal information such as full name, email address, phone number, preferences (ramen, dry ramen), and user must agree to receive newsletter. You are asked to create 5 kinds of form components and 5 kinds of validation. For validation, you must create it using JavaScript and don’t use regular expression.
