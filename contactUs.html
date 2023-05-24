@@ -55,15 +55,34 @@
  <main>
   <div class="form">
     <p class="get-in-touch">Get in Touch</p>
-    <form class="form-container">
+    <form class="form-container" id="form">
       <div class="first-and-last">
-        <input type="text" autocomplete="off" placeholder="First Name" class="first-name">
-        <input type="text" autocomplete="off" placeholder="Last Name" class="last-name">
+        <div class="first-name-container">
+          <input type="text" autocomplete="off" placeholder="First Name" class="first-name" id="first-name">
+          <p class="first-name-error error"></p>
+        </div>
+        <div class="last-name-container">
+          <input type="text" autocomplete="off" placeholder="Last Name" class="last-name" id="last-name">
+          <p class="last-name-error error "></p>
+        </div>
       </div>
       <div class="form-row">
-        <input type="email" autocomplete="off" placeholder="E-Mail" class="email-form">
-        <input type="text" autocomplete="off" placeholder="Phone Number" class="phn-form">
-        <textarea rows="8" required class="message-form" placeholder="Tell Us What Ramen You Like"></textarea>
+        <div class="email-container">
+          <input type="email" autocomplete="off" placeholder="E-Mail" class="email-form" id="email-form">
+          <p class="email-error error"></p>
+        </div>
+        <div class="phn-container">
+          <input type="text" autocomplete="off" placeholder="Phone Number" class="phn-form" id="phn-form">
+          <p class="phn-error error"></p>
+        </div>
+        <textarea rows="8" class="message-form" placeholder="Tell Us What Ramen You Like"></textarea>
+      </div>
+      <div class="newsletter-container">
+        <input type="checkbox" class="agree-to">
+        <label for="agree-to" class="newsletter-label">Agree to receive newsletter</label>
+      </div>
+      <div class="button-container">
+        <button type="submit" class="submit-button">Submit</button>
       </div>
     </form>
   </div>

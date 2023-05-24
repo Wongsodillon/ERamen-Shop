@@ -9,7 +9,6 @@ export const toggleSticky = () => {
         navbarRight.classList.add("sticky");
         navbarLeft.classList.add("sticky");
         navbar.classList.add("sticky");
-        btn.classList.add("sticky");
         prime.classList.add("sticky");
     }
     else

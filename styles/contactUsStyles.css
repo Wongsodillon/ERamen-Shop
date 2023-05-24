@@ -44,8 +44,8 @@ main {
   margin-block-start: 8rem;
 }
 .form {
-  height: 600px;
-  width: 70%;
+  height: 620px;
+  width: 65%;
   background-color: rgba(0, 0, 0, 0.92);
   margin-block-end: 6rem;
   padding-block: 2.25rem;
@@ -65,7 +65,7 @@ main {
 .form-container {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 2.2rem;
 }
 
 .first-and-last {
@@ -77,10 +77,29 @@ main {
   width: clamp(1rem, 61vw, 46.75rem);
 }
 
+.first-name-container, .last-name-container {
+  width: 70%;
+  position: relative;
+}
+
 .first-name,
 .last-name {
-  width: 80%;
+  width: 97%;
   height: 36px;
+}
+
+.first-name-error, .last-name-error,
+.email-error, .phn-error {
+  font-family: Inter;
+  color:var(--fontColor);
+  margin-top: 1rem;
+  font-size: 14px;
+  color: #cf0d37;
+  position: absolute;
+}
+.first-name-error, .last-name-error {
+  top: 30px;
+  left: 11px;
 }
 
 .form-row {
@@ -88,18 +107,35 @@ main {
   flex-direction: column;
   align-items: center;
   gap: 2rem;
+  margin-bottom: 0.5rem;
 }
 
+.email-container {
+  position: relative;
+  margin-bottom: 0.5rem;
+}
 .email-form {
   width: clamp(1rem, 60vw, 46.1rem);
   height: 36px;
 }
-
+.email-error {
+  top: 30px;
+  left: 11px;
+  display: block;
+  width: 100%;
+}
+.phn-container {
+  position: relative;
+  margin-bottom: 0.5rem;
+}
 .phn-form {
   width: clamp(1rem, 60vw, 46.2rem);
   height: 36px;
 }
-
+.phn-error {
+  top: 30px;
+  left: 11px;
+}
 .message-form {
   width: clamp(1rem, 60vw, 46.15rem);
   resize: none;
@@ -126,6 +162,41 @@ textarea {
   font-family: Inter;
   font-size: 18px;
 }
+.newsletter-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: -1.5rem;
+}
+.agree-to {
+  margin: 0; 
+  cursor: pointer;
+}
+.newsletter-label {
+  font-family: Inter;
+  color: var(--fontColor);
+}
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+}
+.submit-button {
+  width: 20%;
+  height: 40px;
+  background: linear-gradient(to right, #F23E3E 50%, #fafafa 50%);
+  background-size: 200% 100%;
+  border:none;
+  font-family: Inter;
+  font-size: 16px;
+  color: var(--fontColor);
+  cursor: pointer;
+  transition: all 0.35s;
+  margin-top: -1rem;
+}
+.submit-button:hover {
+  background-position: -100% 0;
+  color:#9c2121;
+}
 @media screen and (max-width: 768px) {
   .navbar {
     display: none;
@@ -133,12 +204,25 @@ textarea {
   main {
     margin-block-start: 0;
   }
+  .form-container {
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+  .first-and-last {
+    padding: 0;
+    margin: 0;
+    align-items: flex-start;
+    flex-direction: column;
+  }
   .form {
     width: 100%;
     margin-block-start: 4rem;
   }
-  .first-and-last {
-    flex-direction: column;
+  .form-row {
+    align-items: center;
+    margin-right: 5rem;
+    width: 60%;
   }
   .first-name, .last-name {
     margin-inline-start: -0.35rem;
