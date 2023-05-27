@@ -130,9 +130,6 @@ main {
   .promotions-list {
     grid-template-columns: repeat(1, 1fr);
   }
-  .promotion > img {
-    /* transform: rotate(90deg); */
-  }
   .price-container > p {
     font-size: clamp(18px, 2vw, 1.5rem);
   }
