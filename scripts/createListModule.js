@@ -71,3 +71,26 @@ export const recommend = (menu) => {
         menuList.appendChild(newRamen);
     }
 }
+
+export let generatePromotions = menu => {
+    let promotionList = document.querySelector(".promotions-list")
+    for (let i = 0; i < menu.length; i++) {
+        let newPromo = document.createElement("div")
+        newPromo.classList.add("promotion")
+        let name = document.createElement("p")
+        let priceContainer = document.createElement("div")
+        priceContainer.classList.add("price-container")
+        let actualPrice = document.createElement("p")
+        actualPrice.classList.add("actual-price")
+        let discountPrice = document.createElement("p")
+        discountPrice.classList.add("discounted-price")
+        let image = document.createElement("img")
+        image.src = menu[i].img
+        name.textContent = menu[i].name
+        actualPrice.textContent = menu[i].actual
+        discountPrice.textContent = menu[i].disc
+        priceContainer.append(actualPrice, discountPrice)
+        newPromo.append(name, priceContainer, image)
+        promotionList.appendChild(newPromo)
+    }
+}

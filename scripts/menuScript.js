@@ -79,6 +79,9 @@ const navigate = e => {
             case 'Home':
                 window.location.href = "Eramen.html";
                 break;
+            case 'Promotions':
+                window.location.href = 'promotions.html'
+                break;
             case 'About Us':
                 window.location.href = "aboutUs.html";
                 break;

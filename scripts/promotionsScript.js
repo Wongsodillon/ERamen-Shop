@@ -1,22 +1,26 @@
 import { toggleSticky } from "./stickyNavbarModule.js";
+import { promotionData } from "./ramenData.js";
+import { generatePromotions } from "./createListModule.js";
 
 window.addEventListener("scroll", toggleSticky);
 
+generatePromotions(promotionData)
+
+const navbar = document.querySelector(".nav-container-right");
 const navigate = e => {
-    console.log("Hello")
     if (e.target.tagName === 'BUTTON') {
         const navButton = e.target.textContent;
-        window.history.pushState({}, '', 'aboutUs.html');
+        window.history.pushState({}, '', 'promotions.html');
         switch(navButton) {
             case 'Home':
                 window.location.href = "Eramen.html";
                 break;
             case 'Menu':
-                window.location.href = "menu.html";
+                window.location.href = 'menu.html'
                 break;
-            case 'Promotions':
-                window.location.href = 'promotions.html'
-                break
+            case 'About Us':
+                window.location.href = "aboutUs.html";
+                break;
             case 'Contact Us':
                 window.location.href = "contactUs.html"
                 break
@@ -24,15 +28,14 @@ const navigate = e => {
     }
 }
 
-const navbar = document.querySelector(".nav-container-right")
+const burger = document.getElementById("burger-icon")
 const mobileNav = document.querySelector(".nav-mobile")
-mobileNav.addEventListener("click", navigate);
-navbar.addEventListener("click", navigate);
-
-const burger = document.querySelector(".burger-icon")
 burger.addEventListener("click", () => {
-    console.log("check")
     let checked = mobileNav.style.display === "flex";
     mobileNav.style.display = checked ? "none" : "flex";
 })
+
+navbar.addEventListener("click", navigate);
+mobileNav.addEventListener("click", navigate);
+
 

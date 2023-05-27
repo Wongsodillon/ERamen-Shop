@@ -49,8 +49,12 @@ export const navigationsHandler = e => {
             case 'About Us':
                 window.location.href = 'aboutUs.html';
                 break
+            case 'Promotions':
+                window.location.href = 'promotions.html'
+                break
             case 'Contact Us':
                 window.location.href = 'contactUs.html'
+                break
         }
     }
 }

@@ -104,7 +104,7 @@ p {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  max-width: 25rem;
+  width: 27rem;
   min-width: 19.2rem;
   margin-bottom: 0.75rem;
 }
@@ -153,7 +153,7 @@ p {
     justify-content: space-between;
   }
 
-  @media (max-width: 1000px) {
+  @media (max-width: 1024px) {
     .footer {
       padding: 24px;
       flex-direction: row;
@@ -231,6 +231,7 @@ p {
       min-width: 0;
       margin: 0;
       padding: 0;
+      max-width: 25rem;
     }
   
     .foot-button {

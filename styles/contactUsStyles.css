@@ -241,10 +241,17 @@ textarea {
     display: none;
   }
   .title-mobile {
-    font-size: 1.2rem;
+    font-size: 1.45rem;
   }
   .ramen-mobile {
     font-size: 1.5rem;
+  }
+  .logo-mobile {
+    width: 2.625rem;
+    height: 2.625rem;
+  }
+  .nav-mobile-left {
+    gap: 10%;
   }
   main {
     margin-block-start: 0;

@@ -96,3 +96,42 @@ export let menu = [
         "promo": true
     }
 ]
+
+export let promotionData = [
+    {
+        'img': './assets/Promotion1.jpg',
+        'name': 'Double Chicken Ramen Special',
+        'actual': 'Rp 100.000',
+        'disc': 'Rp 50.000'
+    },
+    {
+        'img': './assets/Promotion2.jpg',
+        'name': 'Triple Shio Ramen Pack',
+        'actual': 'Rp 130.000',
+        'disc': 'Rp 80.000'
+    },
+    {
+        'img': './assets/Promotion3.jpg',
+        'name': 'Fukoka Special',
+        'actual': 'Rp 50.000',
+        'disc': 'Rp 30.000'
+    },
+    {
+        'img': './assets/promotion4.jpg',
+        'name': 'Spicy Onomichi Pack',
+        'actual': 'Rp 90.000',
+        'disc': 'Rp 70.000'
+    },
+    {
+        'img': './assets/Promotion5.jpg',
+        'name': 'Spicy Homemade Shoyu Special',
+        'actual': 'Rp 80.000',
+        'disc': 'Rp 45.000'
+    },
+    {
+        'img': './assets/promotion6.jpg',
+        'name': 'Extra Large Sapporo Miso',
+        'actual': 'Rp 100.000',
+        'disc': 'Rp 65.000'
+    }
+]

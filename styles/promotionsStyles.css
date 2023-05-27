@@ -1,0 +1,152 @@
+:root {
+  --background: #101010;
+  --fontColor: #fafafa;
+  --redText: #ee0000;
+  --orange: #E38818;
+  --overlay: rgba(0,0,0,0.875);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  /* overflow-x: hidden; */
+  background-image: url('/assets/exterior2.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.navbar {
+  background-image: url('/assets/navPromo.jpg');
+  width: 100%;
+  height: 256px;
+  box-sizing: border-box;
+  background-size: cover;
+  background-position: center -150px;
+  display: flex;
+  background-attachment: fixed;
+  justify-content: flex-end;
+  align-items: baseline;
+  padding-top: 6vh;
+  position: relative;
+}
+.title-text {
+  position: absolute;
+  display: inline;
+  text-align: center;
+  left: 44%;
+  align-self: center;
+  margin: 0 auto;
+  font-size: 36px;
+  font-family: Inter;
+  color: #fafafa;
+  font-weight: 500;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  background-color: var(--overlay);
+  z-index: 0;
+  margin: 0;
+  padding-block-end: 0.2rem;
+}
+
+.promotions-list {
+  padding-block: 5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.25rem;
+  padding-inline: 3rem;
+  /* place-items: center; */
+}
+
+.promotions-list > div {
+  min-width: 200px;
+  height: clamp(16rem, 65vh, 25rem);
+  display: flex;
+  overflow: hidden;
+  margin: 0;
+  border-radius: 10px;
+  border-color: #E38818;
+  border-width: 1.5px;
+  border-style: solid;
+  position: relative;
+}
+.promotion > img {
+  filter: brightness(87.5%);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  cursor: pointer;
+  transition: all ease-in-out 0.3s;
+}
+.promotion > img:hover {
+  transform: scale(1.15);
+  opacity: 0.9;
+}
+.promotion > p {
+  font-family: Inter;
+  color: var(--fontColor);
+  font-size: 1.8rem;
+  font-weight: 700;
+  position: absolute;
+  left: 6%;
+  top: 8%;
+  margin: 0;
+  z-index: 4;
+}
+
+.price-container {
+  position: absolute;
+  display: flex;
+  z-index: 4;
+  align-items: center;
+  bottom: 4.4%;
+  right: 4%;
+  gap: 14px;
+}
+.price-container > p {
+  font-family: Inter;
+  color: var(--fontColor);
+  font-size: clamp(16px, 2vw, 1.5rem);
+  font-weight: 600;
+  margin: 0;
+  user-select: none;
+}
+.actual-price {
+  text-decoration: line-through;
+}
+.discounted-price {
+  padding-inline: 0.875rem;
+  padding-block: 0.4rem;
+  background-color: var(--orange);
+}
+@media screen and (max-width: 768px) {
+  .navbar {
+    display: none;
+  }
+  .promotions-list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .promotion > img {
+    /* transform: rotate(90deg); */
+  }
+  .price-container > p {
+    font-size: clamp(18px, 2vw, 1.5rem);
+  }
+  .title-mobile {
+    font-size: 1.45rem;
+  }
+  .ramen-mobile {
+    font-size: 1.5rem;
+  }
+  .logo-mobile {
+    width: 2.625rem;
+    height: 2.625rem;
+  }
+  .nav-mobile-left {
+    gap: 10%;
+  }
+}

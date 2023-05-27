@@ -90,7 +90,17 @@ body {
     display: none;
   }
   .title-mobile {
-    font-size: clamp(0.5rem, 8vw, 1.6rem);
+    font-size: 1.45rem;
+  }
+  .ramen-mobile {
+    font-size: 1.5rem;
+  }
+  .logo-mobile {
+    width: 2.625rem;
+    height: 2.625rem;
+  }
+  .nav-mobile-left {
+    gap: 10%;
   }
   .about-us-section {
     padding-top: 4.3rem;

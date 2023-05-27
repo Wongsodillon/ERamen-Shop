@@ -14,8 +14,12 @@ const navigate = e => {
             case 'Menu':
                 window.location.href = "menu.html";
                 break;
+            case 'Promotions':
+                window.location.href = 'promotions.html'
+                break;
             case 'About Us':
                 window.location.href = "aboutUs.html"
+                break
         }
     }
 }
