@@ -75,11 +75,12 @@
           <input type="text" autocomplete="off" placeholder="Phone Number" class="phn-form" id="phn-form">
           <p class="phn-error error"></p>
         </div>
-        <textarea rows="8" class="message-form" placeholder="Tell Us What Ramen You Like"></textarea>
+        <textarea rows="8" class="message-form" placeholder="Tell Us What Ramen You Like  [Optional]"></textarea>
       </div>
-      <div class="newsletter-container">
-        <input type="checkbox" class="agree-to">
-        <label for="agree-to" class="newsletter-label">Agree to receive newsletter</label>
+      <div class="newsletter-container" id="newsletter-container">
+        <input type="checkbox" class="agree-to" id="agree-to">
+        <label for="agree-to" class="newsletter-label" id="newsletter-label">Agree to receive newsletter</label>
+        <p class="checkbox-error error"></p>
       </div>
       <div class="button-container">
         <button type="submit" class="submit-button">Submit</button>

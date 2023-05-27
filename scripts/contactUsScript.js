@@ -50,6 +50,10 @@ function formValidation(e) {
     const emailForm = document.getElementById("email-form")
     const phnNumber = document.getElementById("phn-form").value
     const phnNumberForm = document.getElementById("phn-form")
+    const agreeTo = document.getElementById("agree-to").checked
+    const checkbox = document.getElementById("agree-to")
+    const agreeToForm = document.getElementById("newsletter-container")
+    const label = document.getElementById("newsletter-label")
     const messages = document.querySelectorAll(".error")
     let invalid = false
     if (firstName.length == 0 || firstName == null)
@@ -86,6 +90,13 @@ function formValidation(e) {
         messages[3].textContent = "Phone Number must all be numbers"
         phnNumberForm.style.borderColor = "#cf0d37"
         invalid = true
+    }
+    if (agreeTo == false)
+    {
+        invalid = true
+        label.style.color = '#cf0d37';
+        checkbox.style.borderColor = '#cf0d37'
+        // messages[4].textContent = "Must agree to receive newsletter"
     }
     if (!invalid) console.log("Submitted")
     else if (invalid) e.preventDefault()

@@ -91,7 +91,7 @@ main {
 }
 
 .first-name-error, .last-name-error,
-.email-error, .phn-error {
+.email-error, .phn-error, .checkbox-error {
   font-family: Inter;
   color:var(--fontColor);
   margin-top: 1rem;
@@ -141,6 +141,13 @@ main {
 .message-form {
   width: clamp(1rem, 60vw, 46.15rem);
   resize: none;
+}
+.newsletter-container {
+  position: relative;
+}
+.checkbox-error {
+  top: 12px;
+  left: 6px;
 }
 .form input, textarea {
   background: none;
