@@ -94,6 +94,14 @@ export let menu = [
         "img": "./assets/ibarakiSalt.jpg",
         "desc": "Toothsome noodles, seasoned bamboo shoots, sliced chicken chashu, soft-boiled eggs and salty soup",
         "promo": true
+    },
+    {
+        "type": "Miso Ramen",
+        "name": "Kimchi Spicy Ramen",
+        "price": "Rp 70.000",
+        "img": "/assets/kimchi-miso.jpg",
+        "desc": "Special tangy heat of kimchi, with mushrooms, rich unami miso paste, and fermented and savory flavours",
+        "promo": false
     }
 ]
 
