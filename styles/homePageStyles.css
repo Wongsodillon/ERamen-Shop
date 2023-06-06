@@ -177,7 +177,7 @@ html, body {
   font-size: 50.5px;
 }
 .eramen-text {
-  font-size: 70px;
+  font-size: 4.4rem;
 }
 .get-discount {
   font-size:21px;
@@ -246,24 +246,25 @@ html, body {
 }
 .aboutus-section {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  /* align-items: center; */
-  padding: 4.25rem;
+  gap: 3rem;
+  align-items: center;
+  justify-content: center;
+  margin-block: 4rem;
+  margin-inline: 4rem;
 }
 .aboutus-left {
-  flex-basis: 40%;
+  
 }
 .aboutus-image {
-  max-height: 516px;
-  width:480px;
+  max-height: 32rem;
+  width:(15rem,50vw, 70rem);
   border-radius:4px;
 }
 .aboutus-right {
   display: flex;
   flex-direction:column;
   flex-basis: 56.75%;
-  font-size: 48px;
+  font-size: 3rem;
   align-items: start;
 }
 .aboutus-title {
@@ -274,20 +275,20 @@ html, body {
 .aboutus-aboutus {
   font-family: inter;
   color: var(--textColor);
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: 500;
   margin-bottom: 1.5rem;
 }
 .aboutus-content {
   font-family: Inter;
-  font-size: 22px;
+  font-size: clamp(1rem, 3vw, 22px);
   color: var(--textColor);
   opacity: 80%;
 }
 .aboutus-viewmore {
   font-family: Inter;
   color: var(--textColor);
-  font-size: 22px;
+  font-size: clamp(1rem, 3vw, 22px);
   font-weight: 500;
   margin-bottom: 1.5rem;
   margin-top: 1.5rem;
@@ -304,7 +305,7 @@ html, body {
 .our-menu {
   text-align: center;
   font-family: Inter;
-  font-size: 42px;
+  font-size: 2.75rem;
   color: var(--textColor);
   font-weight: 500;
   margin-bottom: 4rem;
